@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>  
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="ROUGHPAO.css">
+
+</head>
+
+<body>  
+<header>
+        <div class="PAOBOXLogo">
+        <h1  id="PAOBOXLogo">
+        <a href="PAOBOX.html">PAOBOX</a> 
+        </h1>
+        </div>
+</header>
+
+<nav>      
+    <div class="Tabs">
+        <a id="HomeButton" href="PAOBOX.html">About Me</a>
+        <a id="ProjectsButton" href="Projects.html"> Projects</a>
+        <a id="ContactButton" href="Contact_Form.php">Contact</a>
+              
+    </div>
+</nav>
+
+<h2>PHP Form Validation Example</h2>
+
+<p><span class="error">* required field</span></p>
+
+<form method="post" action= "<?php echo $_SERVER['PHP_SELF']; ?>"  >  
+
+    <label for="label_name"> Full Name: </label> <input type="text" placeholder = "First Last" name="name">
+
+    <span class="error">* </span>
+
+    <br><br>
+
+    <label for="label_email"> Email: </label> <input type="text" placeholder ="johnsmith@email.com" name="email">
+
+    <span class="error">*</span>
+
+    <br><br>
+
+    <label for="label_WAY"> Who are you?: </label>
+
+        <input type="radio" name="WAY" value="Peer">Peer
+
+        <input type="radio" name="WAY" value="Viewer">Viewer
+
+        <input type="radio" name="WAY" value="Collaborator">Collaborator
+
+        <span class="error">* </span>
+
+    <br><br>
+
+    <label for="region">Choose a Region:</label> <select id="region" name="region">
+        <option value=""> Select Region</option>
+        <option value="Americas">Americas</option>
+        <option value="Asian Pacific">Asian Pacific</option>
+        <option value="European">European</option>  </select>
+        <span class="error">* </span>
+    <br><br>
+
+    <label for="label_phonenumber"> Phone Number: </label> <input type="tel" placeholder = "0000000000" name="phonenumber">
+    <span class="error">* </span>
+
+    <br><br>
+    
+    <label for="message">Write your message</label>
+    <textarea name="comment" pattern='[A-Za-z0-9\s]{8,60}' placeholder="This is where your comment is..."></textarea>
+        
+    <br><br>
+
+    <input type="checkbox"  name="agree" value ="agree" >
+    <span class="error">* </span>
+
+    <br><br>
+
+    <input type="submit" name="submit" value="Submit">  
+
+</form>
+
+<footer>
+    <div class="ContactUs">
+        <h2 id="ContactUsLogo">Contact Us</h2>    
+        <a href="mailto:pochoa@cord.edu">
+        <img src="images/Email.png"alt="Email"width="50"height="50">
+        </a>
+        <a href="https://instagram.com/clubaccessccm?igshid=YmMyMTA2M2Y=">
+        <img src="images/Instagram.png" alt="Instagram" width="50" height="50">
+        </a>        
+    </div>
+</footer>
+
+</body>
+
+</html>

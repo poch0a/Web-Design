@@ -1,0 +1,58 @@
+.error {color: #FF0000;}
+
+header{
+    border-style : solid;
+    text-emphasis-color: black;
+    
+}
+
+body{
+    background-color: rgba(133, 182, 241, 0.496);
+}
+
+.Tabs {
+    border-style: solid;
+    background-color: grey;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 25px 0;
+    border-radius: 25px;
+    border: 0.1px solid #1e2a32;
+    
+}
+
+.Tabs a {
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.AboutMe{
+    display: inline-block;
+    padding: 10px 10px;
+    margin :auto;
+}
+
+form {
+    border-style: solid;
+    background-color: cadetblue;
+    padding: 10px;
+    
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    display: inline-block;
+
+}
+
+form input {
+    padding: 10px;    
+}
+
